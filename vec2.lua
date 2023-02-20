@@ -1,5 +1,5 @@
   -- Declare & define Vector 2d
-  -- with simple __add & __tostring functions.
+  -- with simple __add , __tostring , and distance functions.
 
   Vec2 = {} 
   
