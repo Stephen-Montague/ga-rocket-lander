@@ -33,12 +33,6 @@ function love.update()
         population.age = 1
       end
     end
-  else
-    fireRocket = true
-    finalRocket.dna = population.best.dna
-    if(finalRocket.geneIndex <= #finalRocket.dna.genes) then
-      finalRocket:run()
-    end
   end
 end
 
@@ -87,7 +81,8 @@ function drawHud()
 
   love.graphics.setFont(scoreFont)
   love.graphics.printf(
-    population.generation, 0, 256, love.graphics.getWidth(), "center")
+    population.generation .. " / " ..population.maxGen, 
+    0, 256, love.graphics.getWidth(), "center")
 
   love.graphics.setFont(labelFont)
   love.graphics.printf(
