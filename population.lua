@@ -9,7 +9,7 @@ function Population:new(rocketCount, mutationRate, maxAge, maxGen)
 
   population.rocketCount = rocketCount or 100
   population.mutationRate = mutationRate or 0.007
-  population.maxAge = maxAge or 180 -- 3 second lifetime at 60fps 
+  population.maxAge = maxAge or 180 -- 3 second lifetime at 60 fps 
   population.maxGen = maxGen or 10
   population.age = 1
   population.generation = 1

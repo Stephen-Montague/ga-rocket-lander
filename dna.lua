@@ -10,7 +10,7 @@ function DNA:new(clone, geneCount)
   self.__index = self
 
   local maxForce = 0.1 -- Use to scale force (vector magnitude) of a gene 
-  dna.geneCount = geneCount or 180 -- Enough to drive for 2 seconds at 60 fps
+  dna.geneCount = geneCount or 180 -- Enough to drive for 3 seconds at 60 fps
   dna.genes = {}
   if (clone) then
     for i, gene in ipairs(clone.genes) do
